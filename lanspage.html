@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Tutorial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 50px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .content {
+            text-align: left;
+            flex: 1 1 50%;
+        }
+
+        .content h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .content h1 {
+            font-size: 45px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .content h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .content p {
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .content button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .illustration {
+            position: relative;
+            flex: 1 1 30%;
+            margin-left: 50px;
+        }
+
+        .illustration img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .social-media {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .social-media li {
+            margin: 10px 0;
+        }
+
+        .social-media a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            background-color: #000;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-media i {
+            transition: all 0.3s ease;
+        }
+
+        .social-media a:hover i {
+            color: #000;;
+        }
+
+        .social-media a:hover {
+            background-color: #25d366;
+        }
+
+        .social-media a.facebook:hover {
+            background-color: #1877f2;
+        }
+
+        .social-media a.twitter:hover {
+            background-color: #1da1f2;
+        }
+
+        .social-media a.instagram:hover {
+            background-color: #e1306c;
+        }
+
+        .social-media a.youtube:hover {
+            background-color: #ff0000;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .content, .illustration {
+                flex: 1 1 100%;
+                text-align: center;
+            }
+
+            .content button {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Portfolio Tutorial</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="content">
+                <h1>HELLO, I'M ROSSA</h1>
+                <h3>SEO Technical Writer & Developer</h3>
+                <p>An aquarius girl who loves music, watching movies and of course writing.</p>
+                <button>Hire me</button>
+                <button>Download CV</button>
+            </div>
+            <div class="illustration">
+                <img src="org kerja.png" alt="Illustration">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <ul class="social-media">
+                <li><a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" class="youtube"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
